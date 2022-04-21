@@ -1,0 +1,4 @@
+# heroku login
+# heroku create 
+# heroku rename <"app-new-name">
+# git push heroku master 
