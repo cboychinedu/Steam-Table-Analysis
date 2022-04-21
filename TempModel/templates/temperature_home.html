@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='Temperature/javascript/ajax-min.js')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='Temperature/css/temperature.css')}}">
+    <title> Temperature Analysis </title>
+</head>
+<body>
+    <!-- Adding the nav div -->
+    <nav class="main_nav" id="main_nav">
+        <nav class="left_nav" id="left_nav">
+            <a class="nav_btn" href="/"> Home </a>
+            <a class="nav_btn" href=""> About </a>
+            <a class="nav_btn" href=""> Contact Us </a>
+            <a class="nav_btn" href="/pressure"> Pressure Analysis </a>
+            <a class="nav_btn" href="/temperature"> Temperature Analysis </a>
+        </nav>
+        <nav class="right_nav" id="right_nav">
+
+        </nav>
+    </nav>
+
+    <!-- Adding the Home Page Section -->
+    <div class="first_div" id="first_div">
+        <h4> Temperature Prediction </h4>
+        
+    </div>
+    
+
+    <!-- Adding javascript -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='Temperature/javascript/temperature.js')}}">
+</body>
+</html>

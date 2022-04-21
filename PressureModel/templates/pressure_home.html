@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+    <script src="{{ url_for('static', filename='Pressure/javascript/ajax-min.js')}}"> </script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='Pressure/css/pressure.css')}}">
+    <title> Pressure Analysis </title>
+</head>
+<body>
+    <!-- Adding the nav div -->
+    <nav class="main_nav" id="main_nav">
+        <nav class="left_nav" id="left_nav">
+            <a class="nav_btn" href="/"> Home </a>
+            <a class="nav_btn" href=""> About </a>
+            <a class="nav_btn" href=""> Contact Us </a>
+            <a class="nav_btn" href="/pressure"> Pressure Analysis </a>
+            <a class="nav_btn" href="/temperature"> Temperature Analysis </a>
+        </nav>
+    </nav>
+    <!-- Adding the Home Page Section -->
+    <div class="first_div" id="first_div">
+        <p class="steam_table_analysis"> Pressure Prediction Using Tensorflow </p>
+    </div>
+
+    <div class="pressure_div">
+        <div class="pressure_result_div">
+            <span class="pressure_result" id="pressure_result"> 566.87 MPa </span>
+
+        </div>
+
+        <div class="input_values_div">
+            <input type="number" name="" class="temp_value_input" id="temp_value_input" placeholder="Type Your Temperature Value Here!"> <br> 
+            <input type="button" class="convert_to_pressure_btn" id="convert_to_pressure_btn" value="Convert To Pressure">
+
+        </div>
+    </div>
+    
+
+
+
+
+
+    <!-- Adding the footer -->
+    <footer class="main_footer_div">
+        <footer class="f_footer">
+            <ul>
+                <li class="footer_header"> <a href=""> About </a></li>
+                <li> <a href=""> FAQ </a></li>
+                <li> <a href=""> Help Center </a></li>
+                <li> <a href=""> Store </a></li>
+                <li> <a href=""> Community </a></li>
+                <li> <a href=""> Branding </a></li>
+                <li> <a href=""> Report </a></li>
+            </ul>
+
+        </footer>
+
+        <footer class="s-footer">
+            <ul>
+                <li class="footer_header"> <a href=""> Terms Of Service </a></li>
+                <li> <a href=""> Product </a></li>
+                <li> <a href=""> Privacy Policy </a></li>
+                <li> <a href=""> Advertisment </a></li>
+                <li> <a href=""> Website & Email </a></li>
+                <li> <a href=""> Slack Community </a></li>
+                <li> <a href=""> Machine Learning Analysis </a></li>
+              
+            </ul>
+        </footer>
+
+        <footer class="t-footer">
+            <ul>
+                <li class="footer_header"> <a href=""> Social Media </a></li>
+                <li> <a href=""> Facebook </a></li>
+                <li> <a href=""> Twitter </a></li>
+                <li> <a href=""> Reddit </a></li>
+                <li> <a href=""> Youtube </a></li>
+                <li> <a href=""> Telegram </a></li>
+                <li> <a href=""> Instagram </a></li>
+            </ul>
+        </footer>
+
+
+        <footer class="language-footer">
+            <ul>
+                <li> 
+                <p style="margin-bottom: 0px; margin-top: 0px;"> Choose a language </p> <br>
+                    <select class="language-select" name="">
+                      <option value="English"> English </option>
+                      <option value="Russian"> Russian </option>
+                      <option value="Spainish"> Spainish </option>
+                    </select>
+                </li> 
+            </ul>
+        </footer>
+    </footer>
+    <footer class="second_main_footer">
+        <p class="footer_para"> ©2021 Blackbox Analytics Inc., All Rights Reserved | Terms | Privacy</p>
+    </footer>
+
+    <!-- Adding javascript -->
+    <script src="{{ url_for('static', filename='Pressure/javascript/pressure.js')}}"> </script> 
+</body>
+</html>

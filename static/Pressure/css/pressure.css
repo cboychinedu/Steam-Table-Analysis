@@ -1,0 +1,233 @@
+body {
+    background-color: #191927;
+    /* color: rgba(236, 236, 236, 0.842); */
+    color: #f8f7ff; 
+    margin: 0 auto; 
+    padding: 0 auto;
+    font-family: 'EB Garamond', serif;  
+}
+a:hover, 
+a:focus {
+    text-decoration: underline;
+    background-color: #009692; 
+}
+.nav_btn {
+    background-color: #00cbc6;
+    border-color: #00cbc6;
+    color: #1e1f2d;
+    font-weight: 800;
+    font-family: 'EB Garamond', serif;
+    border-radius: 0.25rem;
+    padding: 10px 30px 11px 30px; 
+    font-weight: 400;
+    margin: 10px 10px 10px 10px; 
+    text-decoration: none;
+}
+a:nav_btn, 
+a:nav_btn {
+    text-decoration: underline;
+    background-color: #009692; 
+}
+.main_nav {
+    background-color: #2a2a3ec4;
+    padding-top: 10px;
+    height: 80px;
+}
+.left_nav {
+    padding-top: 20px; 
+    padding-left: 50px;  
+}
+.right_nav {
+    margin-top: -24px;
+    padding-left: 30px;
+    margin-right: 50px; 
+    float: right; 
+}
+.first_div {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px; 
+}
+.second_div {
+    margin-top: 30px; 
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding-left: 360px;
+    padding-right: 360px;
+}
+.third_div {
+    display: grid;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    align-content: space-between;
+    margin-top: 30px; 
+    margin-left: 21%;
+    margin-right: 21%;
+}
+.pressure_plot {
+    margin-right: 0px; 
+    margin-bottom: 95px;
+}
+.temperature_plot {
+    margin-left: 0px; 
+}
+#pressure_plot_image {
+    height: 700px;
+}
+#temperature_plot_image{
+    height: 700px;
+}
+#steam_plot_images{
+    width: 960px;
+    height: 569px;
+}
+#model_image {
+    margin-top: 40px;
+    height: 700px;
+    width: 100%;
+    margin-bottom: 150px;
+}
+.steam_table_analysis {
+    font-size: 60px;
+    font-weight: bold;
+    margin-right: -15px;
+    margin-left: 0px; 
+    padding: 20px 20px 20px 20px; 
+    color: #262735; 
+    border-radius: 5px;
+    background-color: white; 
+}
+.steam_para{
+    font-size: 30px;
+    line-height: 2.5rem; 
+}
+.plot_header {
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.bold_class {
+    background-color: #232634;
+    padding: 5px 7px 8px 10px;
+    color: #ffffff;
+    border-radius: 5px;
+    margin-right: 7px;
+}
+ul, li {
+    text-decoration: none;
+    list-style: none;
+}
+ul li:hover, 
+ul li:focus {
+    text-decoration: underline;
+}
+.main_footer_div {
+    display: flex;
+    align-content: space-between;
+    font-size: 23px;
+    height: 575px;
+    margin-top: 400px;
+    background-color: #2a2a3ec4; 
+    align-items: flex-start;
+    justify-content: center;
+}
+.f_footer, 
+.s-footer,
+.t-footer,
+.fourth-footer {
+    height: 400px;
+    line-height: 54px;
+    width: 359px;
+    text-align: center; 
+    color: white; 
+}
+li a {
+    height: 200px;
+    color: white; 
+    line-height: 65px;
+    text-decoration: none;
+}
+.footer_header {
+    text-decoration: underline;
+}
+.language-select {
+    height: 48px;
+    padding-left: 8px;
+    width: 279px;
+    margin-right: 48px;
+    background-color: #141428;
+    padding-right: 10px;
+    color: white;
+    font-size: 13px;
+    border-radius: 5px;
+}
+.language-footer {
+    padding-top: 30px; 
+}
+.second_main_footer {
+    height: 55px;
+    padding-top: 27px;
+    background-color: #232334;
+    font-size: 18px;
+    border: 1px solid #2b2b3f;
+}
+.footer_para {
+    text-align: center; 
+    margin: 0px;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 86px;
+}
+.pressure_div {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #24294f;
+    margin-left: 27%;
+    margin-top: 120px;
+    border-radius: 51px;
+    background-color: #120526;
+    margin-right: 27%;
+    height: 930px;
+    box-shadow: 2px 0px 39px -20px;
+}
+.convert_to_pressure_btn {
+    background-color: #00cbc6;
+    border-color: #00cbc6;
+    color: #1e1f2d;
+    font-weight: 900;
+    width: 360px;
+    font-family: 'EB Garamond', serif;
+    border-radius: 0.25rem;
+    padding: 10px 30px 11px 30px;
+    font-weight: 400;
+    margin: 10px 10px 10px 10px;
+    text-decoration: none;
+}
+.convert_to_pressure_btn:hover, 
+.convert_to_pressure_btn:focus {
+    background-color: #009692; 
+    border-color: #009692;
+}
+
+.pressure_result_div {
+    height: 300px;
+    border: 2px solid white; 
+}
+.temp_value_input {
+    height: 50px;
+    width: 373px;
+    padding-left: 20px;
+    font-size: 15px;
+    outline: none; 
+    border-radius: 11px;
+}
+.input_values_div {
+    margin-top: -295px; 
+}
