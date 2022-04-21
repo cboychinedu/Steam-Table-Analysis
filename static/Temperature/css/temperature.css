@@ -6,7 +6,8 @@ body {
     padding: 0 auto;
     font-family: 'EB Garamond', serif;  
 }
-.nav_btn {
+.home, .about, .contactus, 
+.pressure_analysis, .pressure_analysis  {
     background-color: #00cbc6;
     border-color: #00cbc6;
     color: #1e1f2d;
@@ -89,8 +90,8 @@ a:nav_btn {
 .steam_table_analysis {
     font-size: 60px;
     font-weight: bold;
-    margin-right: 100px;
-    margin-left: 0px; 
+    margin-right: 0px;
+    margin-left: 70px; 
     padding: 20px 20px 20px 20px; 
     color: #262735; 
     border-radius: 5px;
@@ -128,7 +129,7 @@ ul li:focus {
     align-content: space-between;
     font-size: 23px;
     height: 575px;
-    margin-top: 200px;
+    margin-top: 480px;
     background-color: #2a2a3ec4; 
     align-items: flex-start;
     justify-content: center;
@@ -191,3 +192,220 @@ a:focus {
     text-decoration: underline;
     background-color: #009692; 
 }
+.temperature_div {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #24294f;
+    margin-left: 30%;
+    margin-top: 120px;
+    border-radius: 51px;
+    background-color: #120526;
+    margin-right: 30%;
+    height: 930px;
+    box-shadow: 2px 0px 39px -20px;
+}
+.temperature_result_div {
+    height: 300px;
+    border: 2px solid #29263b;
+    border-radius: 14px;
+    box-shadow: 0px 3px 26px -5px;
+}
+.temperature_result {
+    padding-top: 76px;
+    font-size: 45px;
+    padding-left: 113px;
+    font-weight: bold;
+}
+.input_values_div {
+    margin-top: -295px; 
+}
+.pressure_value_input {
+    height: 50px;
+    width: 373px;
+    padding-left: 20px;
+    font-size: 15px;
+    outline: none; 
+    margin-left: -6px;
+    border-radius: 11px;
+}
+.convert_to_temperature_btn {
+    background-color: #00cbc6;
+    border-color: #00cbc6;
+    color: #1e1f2d;
+    font-weight: 900;
+    width: 360px;
+    font-family: 'EB Garamond', serif;
+    border-radius: 0.25rem;
+    padding: 10px 30px 11px 30px;
+    font-weight: 400;
+    margin: 10px 10px 10px 10px;
+    text-decoration: none;
+}
+.convert_to_temperature_btn:hover, 
+.convert_to_temperature_btn:focus {
+    background-color: #009692; 
+    border-color: #009692;
+}
+
+
+/* For mobile devices */
+@media screen and (max-width:370px) { 
+    body {
+        font-size: 12px;
+    }
+    .main_nav {
+        height: 70px;
+        width: 365px;
+    }
+    .steam_table_analysis {
+        font-size: 16px;
+        font-weight: bold;
+        margin-right: 5px;
+        margin-left: 0px;
+    }
+    .plot_header {
+        font-size: 17px; 
+        margin-left: 0px; 
+    }
+    #pressure_plot_image {
+        height: 200px;
+    }
+    #temperature_plot_image{
+        height: 200px; 
+    }
+    #model_image {
+        height: 200px; 
+    }
+    .pressure_plot {
+        margin-right: 0px;
+        margin-bottom: 30px;
+        height: 194px;
+        width: 10px;
+        margin-left: 0px;
+    }
+    .second_div {
+        padding-left: 67px;
+        padding-right: 81px;
+        margin-bottom: -126px; 
+    }
+    .steam_para {
+        font-size: 16px;
+        top: 14px;
+        line-height: 1.5rem;
+    }
+    .third_div {
+        margin-left: 6%; 
+        margin-right: 6%;
+    }
+    #home {
+        margin-top: 248px;
+        margin-left: -43px; 
+    }
+    #about {
+        margin-left: 4px; 
+    }
+    #contactus {
+        margin-left: 3px; 
+    }
+    #pressure_analysis {
+        margin-bottom: -200px;
+        margin-left: 4px; 
+    }
+    #temp_analysis {
+        margin-left: 4px; 
+    }
+
+    .home, .about, .contactus, 
+    .pressure_analysis, .temp_analysis{
+        background-color: #00cbc6;
+        border-color: #00cbc6;
+        color: #1e1f2d;
+        font-size: 10px;
+        font-family: 'EB Garamond', serif;
+        border-radius: 0.25rem;
+        font-weight: bold;
+        text-decoration: none;
+        padding: 18px 11px 16px 3px;
+        margin: -6px 2px 2px 16px;
+    }
+    ul, li {
+        text-decoration: none;
+        list-style: none;
+        height: 50px;
+        width: 25px;
+        font-size: 11px; 
+    }
+    .lang_select {
+        margin-bottom: 0px;
+        margin-left: -29px;
+        margin-top: 0px;
+    }
+    .language-select {
+        height: 24px;
+        padding-left: 8px;
+        width: 50px;
+        margin-left: -19px;
+        background-color: #141428;
+        padding-right: 10px;
+        color: white;
+        margin-top: 22px;
+        font-size: 6px;
+        border-radius: 5px;
+    }
+    .footer_para {
+        font-size: 12px; 
+    }
+    .footer_header {
+        font-size: 12px; 
+    }
+    .temperature_div {
+        margin-left: 6%; 
+        margin-right: 6%;
+        height: 409px;
+    }
+    .temperature_result_div {
+        height: 181px;
+        margin-left: 9px;
+        width: 248px; 
+    }
+    .input_values_div {
+        margin-top: -29px; 
+        margin-left: 11px; 
+    }
+    .pressure_value_input {
+        height: 40px;
+        font-size: 12px;
+        width: 239px;
+    }
+    .convert_to_temperature_btn {
+        width: 236px; 
+        font-size: 12px;
+    }
+    .main_footer_div {
+        margin-top: 301px; 
+    }
+    .temperature_result {
+        padding-top: 43px; 
+        font-size: 30px; 
+        padding-left: 76px;
+    }
+    .pressure_value_input {
+        border-radius: 2px;
+        margin-left: 18px; 
+        height: 40px;
+        width: 198px; 
+        font-size: 11px; 
+        background-color: #120526;
+        outline: none;
+        color: white;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+    }
+ 
+}
+
+
+
+

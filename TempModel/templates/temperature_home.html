@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{{ url_for('static', filename='Temperature/javascript/ajax-min.js')}}">
+    <script src="{{ url_for('static', filename='Temperature/javascript/ajax-min.js')}}"> </script>
     <link rel="stylesheet" href="{{ url_for('static', filename='Temperature/css/temperature.css')}}">
     <title> Temperature Analysis </title>
 </head>
@@ -15,25 +15,97 @@
     <!-- Adding the nav div -->
     <nav class="main_nav" id="main_nav">
         <nav class="left_nav" id="left_nav">
-            <a class="nav_btn" href="/"> Home </a>
-            <a class="nav_btn" href=""> About </a>
-            <a class="nav_btn" href=""> Contact Us </a>
-            <a class="nav_btn" href="/pressure"> Pressure Analysis </a>
-            <a class="nav_btn" href="/temperature"> Temperature Analysis </a>
+            <a class="home" id="home" href="/"> Home </a>
+            <a class="about" id="about" href=""> About </a>
+            <a class="contactus" id="contactus" href=""> Contact Us </a>
+            <a class="pressure_analysis" id="pressure_analysis" href="/pressure"> Pressure Analysis </a>
+            <a class="temp_analysis" id="temp_analysis" href="/temperature"> Temperature Analysis </a>
         </nav>
+        
         <nav class="right_nav" id="right_nav">
 
         </nav>
     </nav>
 
-    <!-- Adding the Home Page Section -->
-    <div class="first_div" id="first_div">
-        <h4> Temperature Prediction </h4>
-        
+     <!-- Adding the Home Page Section -->
+     <div class="first_div" id="first_div">
+        <p class="steam_table_analysis"> Temperature Prediction Using Tensorflow </p>
     </div>
+
+    <div class="temperature_div">
+        <div class="temperature_result_div">
+            <p class="temperature_result" id="temperature_result"> 0.00 °C </p>
+
+        </div>
+
+        <div class="input_values_div">
+            <input type="number" name="" class="pressure_value_input" id="pressure_value_input" placeholder="Type Your Pressure Value Here KPa"> <br> 
+            <input type="button" class="convert_to_temperature_btn" id="convert_to_temperature_btn" value="Convert To Temperature">
+
+        </div>
+    </div>
+
+
+    <!-- Adding the footer -->
+    <footer class="main_footer_div">
+        <footer class="f_footer">
+            <ul>
+                <li class="footer_header"> <a href=""> About </a></li>
+                <li> <a href=""> FAQ </a></li>
+                <li> <a href=""> Help Center </a></li>
+                <li> <a href=""> Store </a></li>
+                <li> <a href=""> Community </a></li>
+                <li> <a href=""> Branding </a></li>
+                <li> <a href=""> Report </a></li>
+            </ul>
+
+        </footer>
+
+        <footer class="s-footer">
+            <ul>
+                <li class="footer_header"> <a href=""> Terms Of Service </a></li>
+                <li> <a href=""> Product </a></li>
+                <li> <a href=""> Privacy Policy </a></li>
+                <li> <a href=""> Advertisment </a></li>
+                <li> <a href=""> Website & Email </a></li>
+                <li> <a href=""> Slack Community </a></li>
+                <li> <a href=""> Machine Learning Analysis </a></li>
+              
+            </ul>
+        </footer>
+
+        <footer class="t-footer">
+            <ul>
+                <li class="footer_header"> <a href=""> Social Media </a></li>
+                <li> <a href=""> Facebook </a></li>
+                <li> <a href=""> Twitter </a></li>
+                <li> <a href=""> Reddit </a></li>
+                <li> <a href=""> Youtube </a></li>
+                <li> <a href=""> Telegram </a></li>
+                <li> <a href=""> Instagram </a></li>
+            </ul>
+        </footer>
+
+
+        <footer class="language-footer">
+            <ul>
+                <li> 
+                <p style="margin-bottom: 0px; margin-top: 0px;"> Choose a language </p> <br>
+                    <select class="language-select" name="">
+                      <option value="English"> English </option>
+                      <option value="Russian"> Russian </option>
+                      <option value="Spainish"> Spainish </option>
+                    </select>
+                </li> 
+            </ul>
+        </footer>
+    </footer>
+    <footer class="second_main_footer">
+        <p class="footer_para"> ©2021 Blackbox Analytics Inc., All Rights Reserved | Terms | Privacy</p>
+    </footer>
     
 
     <!-- Adding javascript -->
-    <link rel="stylesheet" href="{{ url_for('static', filename='Temperature/javascript/temperature.js')}}">
+    <script src="{{ url_for('static', filename='Temperature/javascript/temperature.js')}}"> </script> 
 </body>
 </html>

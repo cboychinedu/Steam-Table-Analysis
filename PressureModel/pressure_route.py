@@ -1,7 +1,6 @@
 #!/usr/bin/env python3 
 
 # Importing the necessary modules 
-import os 
 from flask import Blueprint, request  
 from flask import render_template 
 from PressureModel.pressure_analysis import PressureClassification
@@ -39,4 +38,4 @@ def predictions():
     # On error, execute the block of code below 
     except:
         # Return the error result 
-        return { "result": "null", "message": "error"}; 
+        return { "result": "Error in prediction", "message": "error"}; 

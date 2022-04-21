@@ -5,12 +5,9 @@ import os
 import logging 
 from flask_cors import CORS
 from flask import Flask, url_for 
-from datetime import datetime 
-
-# Importing the views 
-from PressureModel.pressure_route import pressure
-from TempModel.temp_route import temperature
 from Home.home_route import home
+from TempModel.temp_route import temperature
+from PressureModel.pressure_route import pressure
 
 
 # Creating the flask application 
@@ -61,6 +58,9 @@ def dated_url_for(endpoint, **values):
 
 # Running the flask application 
 if __name__ == "__main__":
-    app.run(port=5000, 
-            host="localhost",
-            debug=True)
+    # app.run(port=5000, 
+    #         host="localhost",
+    #         debug=True)
+    # app.run(host="192.168.174.200", port=5000, 
+    #         debug=True)
+    app.run()

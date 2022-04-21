@@ -50,10 +50,25 @@ submit_btn.addEventListener("click", (event) => {
         contentType: "application/json", 
         data: data 
     }) 
-    // 
+    // On response from the server, execute the block of code below 
     .done((data) => {
-        // 
-        console.log(data); 
+        // if the prediction was a success 
+        if (data.message === "success" ) {
+            // Getting the predicted pressure value 
+            pressure_value = data.result.predictedPressure; 
+
+            // Displaying the predicted pressure 
+            pressure_result.innerText = `${pressure_value} KPa`;
+        }
+        
+        // If the message is an error message. 
+        else if (data.message === "error" ) {
+            // Execute the code block below 
+            pressure_result.innerText = data.result; 
+        }
+        
+         
+
     })
 
 })

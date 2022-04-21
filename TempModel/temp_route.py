@@ -1,7 +1,6 @@
 #!/usr/bin/env python3 
 
 # Importing the necessary modules 
-import os 
 from flask import Blueprint, request 
 from flask import render_template 
 from TempModel.temp_analysis import TemperatureClassification 
@@ -38,4 +37,4 @@ def prediction():
     # On error, execute the block of code below 
     except:
         # Return the error as a result 
-        return { "result": "null", "message": "error" }; 
+        return { "result": "Error in prediction", "message": "error" }; 

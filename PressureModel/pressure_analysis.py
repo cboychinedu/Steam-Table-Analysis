@@ -6,8 +6,7 @@ import joblib
 import numpy as np 
 import tensorflow.compat.v1 as tf 
 from tensorflow.keras.layers import Dense
-from tensorflow.keras.models import Sequential, Model 
-from sklearn.preprocessing import StandardScaler 
+from tensorflow.keras.models import Sequential
 
 
 # Disable tensorflow version 2 behavior 
